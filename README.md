@@ -1,16 +1,21 @@
 # naifu-nvidia-docker
 A Docker IMG for Naifu.
 
-Ò»¸öÊÊÓÃÓÚNVIDIAÏÔ¿¨µÄNaifu·şÎñ¶Ë¾µÏñ¡£
+ä¸€ä¸ªé€‚ç”¨äºNVIDIAæ˜¾å¡çš„NaifuæœåŠ¡ç«¯é•œåƒã€‚
 
-## Ê¹ÓÃËµÃ÷
+## ä½¿ç”¨è¯´æ˜
 
-²Î¿¼NVIDIA [Guide](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html) °²×°Çı¶¯»·¾³¡£
+å‚è€ƒNVIDIA [Guide](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html) å®‰è£…é©±åŠ¨ç¯å¢ƒã€‚
 
-×¼±¸ºÃ·şÎñ¶ËÎÄ¼ş£¬ÓÉÓÚ°æÈ¨Ô­ÒòÇå×ÔĞĞ²éÕÒÏÂÔØ¡£
+å‡†å¤‡å¥½æœåŠ¡ç«¯æ–‡ä»¶ï¼Œç”±äºç‰ˆæƒåŸå› æ¸…è‡ªè¡ŒæŸ¥æ‰¾ä¸‹è½½ã€‚
 
-½øÈëÏÂÔØºÃµÄNaifuÎÄ¼ş¼Ğ
+è¿›å…¥ä¸‹è½½å¥½çš„Naifuæ–‡ä»¶å¤¹
+
+```shell
 cd naifu
+```
 
-Æô¶¯·şÎñ¶Ë
+å¯åŠ¨æœåŠ¡ç«¯
+```shell
 docker run --gpus all -itd --ipc=host -p 6969:6969 --name=naifu --restart=always -v ${PWD}:/content/naifu duan2001/naifu:xformers
+```
