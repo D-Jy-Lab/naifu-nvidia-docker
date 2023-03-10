@@ -17,5 +17,5 @@ cd naifu
 
 启动服务端
 ```shell
-docker run --gpus all -itd --ipc=host -p 6969:6969 --name=naifu --restart=always -v ${PWD}:/content/naifu duan2001/naifu:xformers
+docker run --gpus all -itd --ipc=host -p 6969:6969 --name=naifu --restart=always -v ${PWD}:/content/naifu duan2001/naifu
 ```
